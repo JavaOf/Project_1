@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../project/style.css">
+</head>
+<body>
+    <h1><span>Wiki</span>Rick and Morti</h1>
+
+
+    <div class="search-section">
+        <input type="text" id="characterName" placeholder="Введите имя персонажа">
+        <button id="searchButton" onclick="searchCharacter()">Поиск</button>
+    </div>
+
+    <div class="filter-section">
+        <input type="text" id="characterStatus" placeholder="Введите статус (жив, мертв, неизвестен)">
+        <button id="filterButton" onclick="filterByStatus()">Отсартировать по статусу</button>
+    </div>
+
+    <div class="container_characters">
+
+    </div>
+    <div class="pagination">
+        <button id="backPage" onclick="backPage()">   
+          Back
+        </button>
+        <h3 class="currentPage" id="currentPage">1</h3>
+        <button id="nextPage" onclick="nextPage()">
+            Next
+        </button>
+    </div>
+    <button id="stopPage" onclick="stopPage()">Stop</button>
+    <script src="../project/script.js"></script>
+</body>
+</html>
